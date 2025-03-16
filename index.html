@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notitas Tóxicas™</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>🧠 NOTITOXICA 2009™ 🔥</h1>
+    <p class="frase-random">El que tiene hambre... EN PAN PIENSAA!!! Obra de Valentina Baccellieri</p>
+    <p class="frase-random">Obra de Valentina Baccellieri</p>
+    <div class="notas">
+        <img src="https://i.postimg.cc/rsp7G0kr/Noti-Amarilla.png" class="nota" onclick="seleccionarNota('https://i.postimg.cc/rsp7G0kr/Noti-Amarilla.png')">
+        <img src="https://i.postimg.cc/hv362DD3/NotiAzul.png" class="nota" onclick="seleccionarNota('https://i.postimg.cc/hv362DD3/NotiAzul.png')">
+        <img src="https://i.postimg.cc/sfnkjcY9/Noti-Morada.png" class="nota" onclick="seleccionarNota('https://i.postimg.cc/sfnkjcY9/Noti-Morada.png')">
+        <img src="https://i.postimg.cc/SNJwJMV0/NotiRosi.png" class="nota" onclick="seleccionarNota('https://i.postimg.cc/SNJwJMV0/NotiRosi.png')">
+        <img src="https://i.postimg.cc/ncgN7hwX/Noti-Turquesa.png" class="nota" onclick="seleccionarNota('https://i.postimg.cc/ncgN7hwX/Noti-Turquesa.png')">
+        <img src="https://i.postimg.cc/FHS8xX2D/Noti-Verde.png" class="nota" onclick="seleccionarNota('https://i.postimg.cc/FHS8xX2D/Noti-Verde.png')">
+    </div>
+    
+    <div class="preview" id="notita-container">
+        <img id="notita-preview" src="Notis/NotiAmarilla.PNG" alt="Notita">
+        <div id="notita-texto"></div>
+    </div>
+
+    <textarea id="texto" maxlength="100" placeholder="Escribe tu indirecta tóxica..." oninput="actualizarTexto()"></textarea>
+    <div class="emojis">
+        <button onclick="agregarEmoji('☻')">☻</button>
+        <button onclick="agregarEmoji('☺')">☺</button>
+        <button onclick="agregarEmoji('㋛')">㋛</button>
+        <button onclick="agregarEmoji('☹')">☹</button>
+        <button onclick="agregarEmoji('★')">★</button>
+        <button onclick="agregarEmoji('❣')">❣</button>
+        <button onclick="agregarEmoji('♥')">♥</button>
+        <button onclick="agregarEmoji('♡')">♡</button>
+        <button onclick="agregarEmoji('✌︎')">✌︎</button>
+        <button onclick="agregarEmoji('✍︎')">✍︎</button>
+        <button onclick="agregarEmoji('♫')">♫</button>
+    </div>
+    
+    <input type="color" id="color-texto" value="#000000">
+    <label for="color-texto">Color del texto</label>
+    <input type="range" id="brillo" min="50" max="150" value="100" oninput="cambiarBrillo()">
+    <label for="brillo">Brillo</label>
+    <button onclick="descargarNotita()">💌 Guardar Notita</button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas"></script>
+</body>
+</html>
