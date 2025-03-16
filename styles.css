@@ -63,9 +63,6 @@ h1 {
 }
 
 #texto {
-    position: fixed;
-    top: 450px;
-    right: 400px;
     width: 300px; /* Reducido */
     height: 100px; /* Más compacto */
     text-align: center;
@@ -83,29 +80,3 @@ h1 {
 #color-texto {
     margin-top: 10px;
 }
-
-/* Efecto de escarcha suave */
-.escarcha {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Brillitos sutiles */
-  .escarcha::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.6), transparent 70%);
-    opacity: 0.6;
-    pointer-events: none;
-    animation: brillos 1.5s infinite alternate;
-  }
-
-  .emojis {
-    position: fixed;
-    top: 580px;
-    right: 400px;
-  }
