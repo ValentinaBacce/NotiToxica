@@ -63,6 +63,7 @@ h1 {
 }
 
 #texto {
+  position: relative;
     width: 300px; /* Reducido */
     height: 100px; /* Más compacto */
     text-align: center;
@@ -79,4 +80,7 @@ h1 {
 
 #color-texto {
     margin-top: 10px;
+}
+.emoji {
+  position: relative;
 }
