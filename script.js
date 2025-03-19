@@ -29,7 +29,10 @@ function actualizarTexto() {
     const texto = document.getElementById("texto").value;
     document.getElementById("notita-texto").innerText = texto;
 }
-
+function cambiarSaturacion() {
+    const saturacion = document.getElementById("saturacion").value;
+    document.getElementById("notita-preview").style.filter = `saturate(${saturacion}%)`;
+}
 function cambiarBrillo() {
     const brillo = document.getElementById("brillo").value;
     document.getElementById("notita-preview").style.filter = `brightness(${brillo}%)`;
