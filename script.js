@@ -54,6 +54,10 @@ function descargarNotita() {
         canvas.width = img.width;
         canvas.height = img.height;
 
+ // **Dibujar el fondo blanco**
+    ctx.fillStyle = 'white';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
         // Dibujar la imagen en el canvas
         ctx.drawImage(img, 0, 0);
 
